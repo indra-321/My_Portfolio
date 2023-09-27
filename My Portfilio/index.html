@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="icon" href="logo.png" type="image/icon type">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+    <!--<div class="pre-loader" id="pre-loader">
+        <img src="pre-loader.gif" alt="">
+    </div>  -->
+
+
+    <nav id="navbar">
+        <h2>INDRA</h2>
+        <div class="navbar-items main-nav-items">
+            <a href="#" id="home-item">Home</a>
+            <a href="#about" id="about-item">About Me</a>
+            <a href="#service">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <img src="hamburger-menu.png" alt="" onclick="openMenu()">
+    </nav>
+
+
+    <div class="hamburger-menu navbar-items" id="hamburgerMenu">
+        <img src="close.png" alt="" onclick="closeMenu()">
+        <a href="#" id="home-item" onclick="closeMenu()">Home</a>
+        <a href="#about" id="about-item" onclick="closeMenu()">About Me</a>
+        <a href="#service" onclick="closeMenu()">Services</a>
+        <a href="#portfolio" onclick="closeMenu()">Portfolio</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
+    </div>
+
+    <div id="home" class="home-section">
+        <div class="home-section-text">
+            <h1>I'm Indrajeet</h1>
+            <h4>Front-end Developer , Python Developer & expert in Oracle </h4>
+            <button class="btn-common">Hire Me</button>
+        </div>
+        <div class="home-section-image">
+            <img src="home-image.svg" alt="">
+        </div>
+    </div>
+
+    <div id="about" class="about-section">
+        <div class="about-section-image">
+            <h2>About Me</h2>
+            <img src="about-image.png" alt="">
+        </div>
+        <div class="about-section-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dignissimos esse vel laborum magni? Soluta labore temporibus nam nostrum, ducimus ad veniam velit quod cum eos est, quibusdam sunt natus hic mollitia fuga quasi sequi quo consequuntur dolorum beatae! Asperiores aliquid error incidunt eveniet, distinctio eius necessitatibus ex aperiam sit?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dignissimos esse vel laborum magni? Soluta labore temporibus nam nostrum, ducimus ad veniam velit quod cum eos est, quibusdam sunt natus hic mollitia.</p>
+            <div class="about-section-button-section">
+                <button class="btn-common">View Work</button>
+                <button class="btn-common">Download CV</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="service" class="service-section">
+        <div class="service-section-upper-part">
+            <h2>Services</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatibus dolore expedita nulla quidem, iste debitis saepe vitae voluptatem cumque?</p>
+        </div>
+        <div class="service-section-lower-part">
+            <div class="service-card" id="service-card1">
+                <div class="service-card-box" id="service-card-box-1">
+                    <img src="desktop.png" alt="">
+                    <h3>Website</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, quae? consectetur adipisicing elit. Quo, quae?</p>
+                </div>
+            </div>
+            <div class="service-card" id="service-card2">
+                <div class="service-card-box" id="service-card-box-2">
+                    <img src="insta.png" alt="">
+                    <h3>Posters</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, quae? consectetur adipisicing elit. Quo, quae?</p>
+                </div>
+            </div>
+            <div class="service-card" id="service-card3">
+                <div class="service-card-box" id="service-card-box-3">
+                    <img src="youtube.png" alt="">
+                    <h3>Thumbnails</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, quae? consectetur adipisicing elit. Quo, quae?</p>
+                </div>
+            </div>
+            <div class="service-card" id="service-card4">
+                <div class="service-card-box" id="service-card-box-4">
+                    <img src="phone.png" alt="">
+                    <h3>UI/UX Design</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, quae? consectetur adipisicing elit. Quo, quae?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="portfolio" class="portfolio-section">
+        <div class="portfolio-section-upper">
+            <h2>Latest Work</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur recusandae dolore accusantium. Doloribus, accusantium! Consectetur, corporis temporibus harum itaque, repellendus nesciunt mollitia aliquid, cupiditate ex ut delectus eius impedit sequi?</p>
+            <div class="portfolio-section-filter">
+                <p onclick="filterAll()" id="all-filter">All</p>
+                <p onclick="filterWebsite()" id="website-filter">Website</p>
+                <p onclick="filterPoster()" id="poster-filter">Posters</p>
+                <p onclick="filterThumbnail()" id="thumbnail-filter">Thumbnails</p>
+            </div>
+        </div>
+        <div class="portfolio-section-lower">
+            <div class="portfolio-section-lower-cup-box" id="portfolio-section-lower-cup-box-1">
+                <img src="cup1.jpeg" alt="">
+                <div class="portfolio-section-lower-cup-hover-box">
+                    <img src="search.png" alt="">
+                    <h4><a href="#" target="_blank">Middle Class Coder</a></h4>
+                    <p>Category - Website</p>
+                </div>
+            </div>
+            <div class="portfolio-section-lower-cup-box" id="portfolio-section-lower-cup-box-2">
+                <img src="cup2.jpeg" alt="">
+                <div class="portfolio-section-lower-cup-hover-box">
+                    <img src="search.png" alt="">
+                    <h4><a href="#" target="_blank">Android App Post</a></h4>
+                    <p>Category - Website</p>
+                </div>
+            </div>
+            <div class="portfolio-section-lower-cup-box" id="portfolio-section-lower-cup-box-3">
+                <img src="cup9.jpeg" alt="">
+                <div class="portfolio-section-lower-cup-hover-box">
+                    <img src="search.png" alt="">
+                    <h4><a href="#" target="_blank">Website Post</a></h4>
+                    <p>Category - Website</p>
+                </div>
+            </div>
+            <div class="portfolio-section-lower-cup-box" id="portfolio-section-lower-cup-box-4">
+                <img src="cup4.jpeg" alt="">
+                <div class="portfolio-section-lower-cup-hover-box">
+                    <img src="search.png" alt="">
+                    <h4><a href="#" target="_blank">UI/UX Post</a></h4>
+                    <p>Category - Website</p>
+                </div>
+            </div>
+            <div class="portfolio-section-lower-cup-box" id="portfolio-section-lower-cup-box-5">
+                <img src="cup5.jpeg" alt="">
+                <div class="portfolio-section-lower-cup-hover-box">
+                    <img src="search.png" alt="">
+                    <h4><a href="#">Middle Class Coder</a></h4>
+                    <p>Category - Website</p>
+                </div>
+            </div>
+            <div class="portfolio-section-lower-cup-box" id="portfolio-section-lower-cup-box-6">
+                <img src="cup6.jpeg" alt="">
+                <div class="portfolio-section-lower-cup-hover-box">
+                    <img src="search.png" alt="">
+                    <h4><a href="https://sachinjha23.github.io/hostinger/" target="_blank">Seagle</a></h4>
+                    <p>Category - Website</p>
+                </div>
+            </div>
+            <div class="portfolio-section-lower-cup-box" id="portfolio-section-lower-cup-box-7">
+                <img src="cup7.jpeg" alt="">
+                <div class="portfolio-section-lower-cup-hover-box">
+                    <img src="search.png" alt="">
+                    <h4><a href="#">Middle Class Coder</a></h4>
+                    <p>Category - Website</p>
+                </div>
+            </div>
+            <div class="portfolio-section-lower-cup-box" id="portfolio-section-lower-cup-box-8">
+                <img src="cup8.jpeg" alt=""> 
+                <div class="portfolio-section-lower-cup-hover-box">
+                    <img src="search.png" alt="">
+                    <h4><a href="#">Middle Class Coder</a></h4>
+                    <p>Category - Website</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="hire" class="hire-section">
+        <h2>Have Any Project In Mind ?</h2>
+        <button class="btn-common">Hire Me</button>
+    </div>
+
+    <div id="contact" class="contact-section">
+        <h2>INDRA</h2> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, eius. Nisi fugit aliquam veritatis animi similique neque eius rerum? Excepturi.</p>
+        <div class="social-media-section">
+            <a href="#" class="social-media-circle">
+                <img src="whatsapp.svg" alt="">
+            </a>
+            <a href="#" class="social-media-circle">
+                <img src="gmail.svg" alt="">
+            </a>
+            <a href="#" class="social-media-circle">
+                <img src="instagram.svg" alt="">
+            </a>
+            <a href="#" class="social-media-circle">
+                <img src="telegram.svg" alt="">
+            </a>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <p>website Designed & Developed by <span>Indrajeet kumar</span></p>
+    </footer>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
